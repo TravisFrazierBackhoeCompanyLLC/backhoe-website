@@ -34,45 +34,98 @@ header {
     z-index: 9999;
 }
 
-/* NAVBAR */
+/* NAVBAR BASE */
 .navbar {
-    background: #000;
     display: flex;
-    justify-content: space-between; /* logo left, nav right */
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-}
-
-nav {
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* LEFT SIDE (LOGO + NAME) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
 /* NAV LINKS */
-.navbar ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
+    gap: 25px;
+    list-style: none;
 }
 
-.navbar a {
-    color: #f1c40f; /* yellow */
-    font-weight: bold;
+.nav-links a {
+    color: var(--text-color);
     text-decoration: none;
-    font-size: 18px;
-    padding: 6px 12px;
-    border: 2px solid white; /* white outline */
-    border-radius: 4px;
-    transition: 0.2s ease;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
 }
 
-.navbar a:hover {
-    background: #f1c40f; /* yellow fill */
-    color: #000;         /* black text */
-    border-color: #f1c40f;
+.nav-links a:hover {
+    background: var(--accent-color);
+    color: #000;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    transition: 0.3s ease;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.9);
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        display: none;
+        border-left: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
 
 .hero {
