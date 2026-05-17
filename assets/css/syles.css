@@ -113,3 +113,40 @@ footer {
 .contact-card ul {
     padding-left: 20px;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    height: 120px; /* adjust as needed */
+    width: auto;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo-img {
+    height: 120px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #222;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
