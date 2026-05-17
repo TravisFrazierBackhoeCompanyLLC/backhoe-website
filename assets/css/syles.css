@@ -158,3 +158,10 @@ header {
     display: block;
     margin: 0 auto;     /* centers it */
 }
+
+.logo-img {
+    max-width: 180px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
