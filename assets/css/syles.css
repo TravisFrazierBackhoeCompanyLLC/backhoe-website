@@ -1,167 +1,53 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+/* ============================
+   HEADER + NAVBAR (CLEAN RESET)
+   ============================ */
+
+header {
+    background: #000; /* black background */
+    padding: 20px 0;
+    text-align: center;
 }
 
+/* LOGO */
+.logo-img {
+    max-width: 180px;   /* keeps logo small */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* NAVBAR */
 .navbar {
+    background: #000; /* black */
+    padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 40px;
-    background: #222;
 }
 
-.navbar .logo {
-    color: #f1c40f;
-    font-size: 24px;
-    font-weight: bold;
-}
-
+/* NAV LINKS */
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('../img/backhoe-hero.jpg') center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.hero-content h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.cta-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #f1c40f;
-    color: #222;
+    color: #f1c40f; /* yellow text */
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid white; /* white outline */
+    border-radius: 4px;
+    transition: 0.2s ease;
 }
 
-.services-preview {
-    padding: 40px;
-    text-align: center;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-.contact-section {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.contact-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.contact-card h3 {
-    color: #f1c40f;
-    margin-bottom: 10px;
-}
-
-.contact-card a {
-    color: #222;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contact-card ul {
-    padding-left: 20px;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.logo-img {
-    height: 120px; /* adjust as needed */
-    width: auto;
-}
-
-header {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.logo-img {
-    height: 120px;
-    width: auto;
-    margin-bottom: 10px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background: #222;
-    padding: 15px 0;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.logo-img {
-    max-width: 220px;   /* keeps it from getting massive */
-    width: 100%;        /* scales down on small screens */
-    height: auto;       /* keeps proportions correct */
-    display: block;
-    margin: 0 auto;     /* centers it */
-}
-
-.logo-img {
-    max-width: 180px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
+.navbar a:hover {
+    background: #f1c40f; /* yellow fill */
+    color: #000;         /* black text */
+    border-color: #f1c40f;
 }
