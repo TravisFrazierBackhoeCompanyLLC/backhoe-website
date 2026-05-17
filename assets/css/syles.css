@@ -150,3 +150,11 @@ header {
     gap: 20px;
     list-style: none;
 }
+
+.logo-img {
+    max-width: 220px;   /* keeps it from getting massive */
+    width: 100%;        /* scales down on small screens */
+    height: auto;       /* keeps proportions correct */
+    display: block;
+    margin: 0 auto;     /* centers it */
+}
