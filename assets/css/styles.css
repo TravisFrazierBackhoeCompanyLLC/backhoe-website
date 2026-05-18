@@ -447,6 +447,29 @@ header {
     align-items: center;
 }
 
+/* OWNER IMAGE — FORCE SMALL SIZE */
+.owner-img {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 3px solid #f1c40f;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* BACKHOE IMAGE */
+.backhoe-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 3px solid #f1c40f;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
 .owner-info h3.owner-name {
     font-size: 26px;
     margin-bottom: 15px;
@@ -458,7 +481,7 @@ header {
     line-height: 1.6;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
     .owner-container {
         grid-template-columns: 1fr;
@@ -466,17 +489,13 @@ header {
     }
 
     .owner-img {
-    width: 40%;
-    max-width: 150px;
-    margin: 0 auto;
-    display: block;
-}
+        width: 150px;
+    }
 
-.owner-img {
-    width: 250px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
+    .backhoe-img {
+        width: 80%;
+        max-width: 300px;
+    }
 }
 
 /* ========================= */
