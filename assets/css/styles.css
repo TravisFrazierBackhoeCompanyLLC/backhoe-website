@@ -31,10 +31,10 @@ section {
     max-width: 1200px;
     opacity: 0.40;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
 }
 
-/* HEADER (EMPTY – NAVBAR HANDLES EVERYTHING) */
+/* HEADER */
 header {
     background: transparent;
     padding: 0;
@@ -57,7 +57,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* LEFT SIDE (LOGO + NAME) */
 .nav-left {
     display: flex;
     align-items: center;
@@ -76,7 +75,6 @@ header {
     color: #fff;
 }
 
-/* NAV LINKS */
 .nav-links {
     display: flex;
     gap: 25px;
@@ -92,12 +90,13 @@ header {
     transition: 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     background: #f1c40f;
     color: #000;
 }
 
-/* HAMBURGER MENU */
+/* MOBILE MENU */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -112,7 +111,6 @@ header {
     transition: 0.3s ease;
 }
 
-/* MOBILE MENU */
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -153,12 +151,18 @@ header {
     border-bottom: 4px solid #f1c40f;
 }
 
-.hero-content h2 {
-    font-size: 40px;
+.hero-content h1 {
+    font-size: 48px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px black;
 }
 
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* CTA BUTTON */
 .cta-btn {
     display: inline-block;
     margin-top: 15px;
@@ -184,30 +188,124 @@ header {
 .services-preview {
     padding: 40px;
     text-align: center;
-    color: white;
 }
 
 .service-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     margin-top: 25px;
 }
 
 .card {
     background: #111;
-    padding: 20px;
-    width: 250px;
+    padding: 25px;
+    width: 260px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(255,255,255,0.1);
     border: 2px solid #f1c40f;
-    color: white;
     transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ========================= */
+/*     WHY CHOOSE US         */
+/* ========================= */
+
+.why-us {
+    text-align: center;
+}
+
+.why-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.why-item {
+    background: #111;
+    padding: 18px;
+    border-radius: 6px;
+    border: 2px solid #f1c40f;
+    font-weight: bold;
+}
+
+/* ========================= */
+/*     TESTIMONIALS          */
+/* ========================= */
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonial-cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #f1c40f;
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+/* ========================= */
+/*     GALLERY PREVIEW       */
+/* ========================= */
+
+.gallery-preview {
+    text-align: center;
+}
+
+.gallery-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-box {
+    background: #111;
+    height: 150px;
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================= */
+/*     FINAL CTA SECTION     */
+/* ========================= */
+
+.final-cta {
+    text-align: center;
+    background: #111;
+    padding: 60px 20px;
+    border-top: 3px solid #f1c40f;
+    border-bottom: 3px solid #f1c40f;
+}
+
+.final-cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 /* ========================= */
@@ -216,8 +314,13 @@ header {
 
 .contact-section {
     padding: 40px;
+    text-align: center;
+}
+
+.contact-grid {
+    margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
@@ -225,7 +328,6 @@ header {
     background: #111;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
     border: 2px solid #f1c40f;
 }
 
@@ -240,16 +342,16 @@ header {
     text-decoration: none;
 }
 
-/* ========================= */
-/*          FOOTER           */
-/* ========================= */
-
-footer {
-    background: #000;
-    color: #f1c40f;
-    text-align: center;
-    padding: 15px;
-    border-top: 3px solid #f1c40f;
+/* MAP PLACEHOLDER */
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #222;
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ========================= */
@@ -314,4 +416,16 @@ footer {
 .form-success {
     font-size: 18px;
     font-weight: bold;
+}
+
+/* ========================= */
+/*          FOOTER           */
+/* ========================= */
+
+footer {
+    background: #000;
+    color: #f1c40f;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #f1c40f;
 }
