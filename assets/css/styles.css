@@ -471,6 +471,12 @@ header {
     margin: 0 auto;
     display: block;
 }
+
+.owner-img {
+    width: 250px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ========================= */
