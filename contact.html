@@ -3,57 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Travis Frazier Backhoe Company LLC</title>
+    <title>Contact Us | Travis Frazier Backhoe Company LLC</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+
+<!-- Floating Watermark Logo -->
+<img src="assets/img/logo-transparent.png" class="floating-logo" alt="Background Logo">
 
 <header>
     <nav class="navbar">
-        <h1 class="logo">Travis Frazier Backhoe Company LLC</h1>
-        <ul>
+        <div class="nav-left">
+            <img src="assets/img/logo-transparent.png" class="nav-logo" alt="Logo">
+            <span class="nav-title">Travis Frazier Backhoe Company LLC</span>
+        </div>
+
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
             <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 </header>
 
-<section class="page-header">
-    <h2>Contact Us</h2>
-    <p>Get in touch for quotes, scheduling, or general questions.</p>
+<!-- HERO -->
+<section class="hero" style="height: 35vh;">
+    <div class="hero-content">
+        <h2>Contact Us</h2>
+        <p>Reach out for quotes, questions, or project inquiries.</p>
+    </div>
 </section>
 
+<!-- CONTACT INFO -->
 <section class="contact-section">
     <div class="contact-card">
-        <h3>Call or Email</h3>
-        <p><strong>Phone:</strong> <a href="tel:951-440-0647"> (951) 440-0647</a></p>
-        <p><strong>Email:</strong> <a href="mailto:travfraz@hotmail.com">travfraz@hotmail.com</a></p>
+        <h3>Phone</h3>
+        <p><a href="tel:9514400647">(951) 440‑0647</a></p>
+    </div>
+
+    <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:travfraz@hotmail.com">travfraz@hotmail.com</a></p>
     </div>
 
     <div class="contact-card">
         <h3>Service Area</h3>
-        <p>Serving all of Southern California including:</p>
-        <ul>
-            <li>Orange County</li>
-            <li>Riverside County</li>
-            <li>San Bernardino County</li>
-            <li>San Diego County</li>
-        </ul>
+        <p>Serving all of Southern California</p>
     </div>
+</section>
 
-    <div class="contact-card">
-        <h3>Business Hours</h3>
-        <p>Monday–Friday: 7 AM – 5 PM</p>
-        <p>Saturday: By appointment</p>
-        <p>Sunday: Closed</p>
+<!-- REQUEST FORM -->
+<section id="quote-form" class="quote-section">
+    <div class="container">
+        <h2 class="section-title">Request a Quote</h2>
+
+        <form class="quote-form upgraded">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="(951) 440‑0647" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="travfraz@hotmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select required>
+                        <option value="">Select a service…</option>
+                        <option>Excavation</option>
+                        <option>Trenching</option>
+                        <option>Grading</option>
+                        <option>Site Prep</option>
+                        <option>Concrete Removal</option>
+                        <option>Hauling</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Project Details</label>
+                <textarea rows="5" placeholder="Describe your project…"></textarea>
+            </div>
+
+            <button type="submit" class="cta-btn">Submit Request</button>
+
+            <p class="form-success" style="display:none; text-align:center; margin-top:15px; color:#f1c40f;">
+                Thank you! Your request has been submitted.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="quote-section">
+    <div class="container">
+        <h2 class="section-title">Our Service Area</h2>
+        <p style="text-align:center; margin-bottom:20px;">We proudly serve all of Southern California.</p>
+
+        <!-- Google Map Placeholder -->
+        <div style="width:100%; height:300px; background:#222; border:2px solid #f1c40f; border-radius:8px; display:flex; align-items:center; justify-content:center; color:white;">
+            Google Map Goes Here
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Travis Frazier Backhoe Company LLC</p>
+    <p>© 2025 Travis Frazier Backhoe Company LLC</p>
 </footer>
 
+<script src="assets/js/navbar.js"></script>
 </body>
 </html>
