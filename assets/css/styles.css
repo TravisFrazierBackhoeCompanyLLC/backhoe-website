@@ -162,6 +162,17 @@ header {
     margin-bottom: 15px;
 }
 
+/* HERO BACKHOE IMAGE */
+.hero-backhoe-img {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto 0;
+    display: block;
+    border: 3px solid #f1c40f;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
 /* CTA BUTTON */
 .cta-btn {
     display: inline-block;
@@ -434,15 +445,6 @@ header {
     grid-template-columns: 1fr 1.2fr;
     gap: 40px;
     align-items: center;
-}
-
-.owner-img,
-.backhoe-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 3px solid #f1c40f;
-    box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
 .owner-info h3.owner-name {
