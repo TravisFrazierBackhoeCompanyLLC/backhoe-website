@@ -359,6 +359,31 @@ header {
     text-shadow: 0 0 10px #f1c40f;
 }
 
+/* GALLERY PAGE */
+.gallery-page {
+    padding: 40px;
+}
+
+.gallery-page .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-page .gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-page .gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
 /* ========================= */
 /*     FINAL CTA SECTION     */
 /* ========================= */
