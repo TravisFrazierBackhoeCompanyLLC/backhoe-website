@@ -302,6 +302,21 @@ header {
     justify-content: center;
 }
 
+.gallery-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
 /* ========================= */
 /*     FINAL CTA SECTION     */
 /* ========================= */
