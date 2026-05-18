@@ -334,8 +334,8 @@ header {
 .lightbox-content {
     display: block;
     margin: auto;
-    max-width: 45%;
-    max-height: 40vh;
+    max-width: 60%;
+    max-height: 60vh;
     border: 3px solid #f1c40f;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
