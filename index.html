@@ -155,10 +155,16 @@
     <h2 class="section-title">Recent Work</h2>
 
     <div class="gallery-grid">
-        <img src="assets/img/home1.jpg" alt="Backhoe Project 1" class="gallery-img">
-        <img src="assets/img/home2.jpg" alt="Backhoe Project 2" class="gallery-img">
-        <img src="assets/img/home3.jpg" alt="Backhoe Project 3" class="gallery-img">
-    </div>
+    <img src="assets/img/home1.jpg" alt="Backhoe Project 1" class="gallery-img lightbox-trigger">
+    <img src="assets/img/home2.jpg" alt="Backhoe Project 2" class="gallery-img lightbox-trigger">
+    <img src="assets/img/home3.jpg" alt="Backhoe Project 3" class="gallery-img lightbox-trigger">
+</div>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
 
     <a href="gallery.html" class="cta-btn" style="margin-top:25px;">View Full Gallery</a>
 </section>
@@ -175,5 +181,6 @@
 </footer>
 
 <script src="assets/js/navbar.js"></script>
+<script src="assets/js/lightbox.js"></script>
 </body>
 </html>
