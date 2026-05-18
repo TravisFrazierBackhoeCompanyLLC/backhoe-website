@@ -465,11 +465,12 @@ header {
         text-align: center;
     }
 
-    .owner-img,
-    .backhoe-img {
-        max-width: 90%;
-        margin: 0 auto;
-    }
+    .owner-img {
+    width: 70%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
 }
 
 /* ========================= */
