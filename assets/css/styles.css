@@ -334,11 +334,12 @@ header {
 .lightbox-content {
     display: block;
     margin: auto;
-    max-width: 90%;
-    max-height: 80vh;
+    max-width: 45%;
+    max-height: 40vh;
     border: 3px solid #f1c40f;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    object-fit: contain; /* ensures no distortion */
 }
 
 .lightbox-close {
@@ -346,14 +347,16 @@ header {
     top: 20px;
     right: 35px;
     color: #f1c40f;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 10000;
 }
 
 .lightbox-close:hover {
-    color: #fff;
+    color: #ffffff;
+    text-shadow: 0 0 10px #f1c40f;
 }
 
 /* ========================= */
