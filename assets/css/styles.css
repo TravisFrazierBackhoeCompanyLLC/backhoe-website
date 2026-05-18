@@ -297,3 +297,21 @@ footer {
     outline: none;
     border-color: white;
 }
+
+/* UPGRADED FORM LAYOUT */
+.quote-form.upgraded {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-success {
+    font-size: 18px;
+    font-weight: bold;
+}

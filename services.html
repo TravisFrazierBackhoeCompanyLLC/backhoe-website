@@ -1,34 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Travis Frazier Backhoe Company LLC</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="assets/img/logo-transparent.png" class="nav-logo" alt="Logo">
+            <span class="nav-title">Travis Frazier Backhoe Co.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="height: 40vh;">
+    <div class="hero-content">
+        <h2>Professional Backhoe & Excavation Services</h2>
+        <p>Reliable, experienced, and ready for any project — big or small.</p>
+    </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="services-preview">
+    <h2 class="section-title">What We Offer</h2>
+
+    <div class="service-cards">
+
+        <div class="card">
+            <div class="service-icon">⛏️</div>
+            <h3>Excavation</h3>
+            <p>Full‑service excavation for foundations, pools, utilities, and site development.</p>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">📏</div>
+            <h3>Trenching</h3>
+            <p>Precision trenching for electrical, plumbing, irrigation, and drainage systems.</p>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">🏗️</div>
+            <h3>Grading</h3>
+            <p>Rough and finish grading to prepare your land for construction or landscaping.</p>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">🚧</div>
+            <h3>Site Preparation</h3>
+            <p>Land clearing, leveling, and prep work to get your project ready to build.</p>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">🧱</div>
+            <h3>Concrete Removal</h3>
+            <p>Breaking and hauling away concrete driveways, patios, slabs, and more.</p>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">🚜</div>
+            <h3>Hauling</h3>
+            <p>Dirt, debris, and material hauling for jobsite cleanup and preparation.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="quote-section">
+    <div class="container">
+        <h2 class="section-title">Ready to Start Your Project?</h2>
+        <p style="text-align:center; margin-bottom:20px;">
+            Tell us what you need — we’ll get back to you quickly with a fair, accurate quote.
+        </p>
+
+        <a href="index.html#quote-form" class="cta-btn" style="display:block; width:max-content; margin:0 auto;">
+            Request a Quote
+        </a>
+    </div>
+</section>
+
 <section id="quote-form" class="quote-section">
     <div class="container">
         <h2 class="section-title">Request a Quote</h2>
 
-        <form class="quote-form">
+        <form class="quote-form upgraded">
 
-            <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" placeholder="John Doe" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="(555) 123‑4567" required>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" placeholder="(555) 123‑4567" required>
-            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com">
+                </div>
 
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="you@example.com">
-            </div>
-
-            <div class="form-group">
-                <label>Service Needed</label>
-                <select required>
-                    <option value="">Select a service…</option>
-                    <option>Excavation</option>
-                    <option>Trenching</option>
-                    <option>Grading</option>
-                    <option>Site Prep</option>
-                    <option>Concrete Removal</option>
-                </select>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select required>
+                        <option value="">Select a service…</option>
+                        <option>Excavation</option>
+                        <option>Trenching</option>
+                        <option>Grading</option>
+                        <option>Site Prep</option>
+                        <option>Concrete Removal</option>
+                        <option>Hauling</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-group">
@@ -38,6 +142,18 @@
 
             <button type="submit" class="cta-btn">Submit Request</button>
 
+            <p class="form-success" style="display:none; text-align:center; margin-top:15px; color:#f1c40f;">
+                Thank you! Your request has been submitted.
+            </p>
+
         </form>
     </div>
 </section>
+
+<footer>
+    <p>© 2026 Travis Frazier Backhoe Company LLC</p>
+</footer>
+
+<script src="assets/js/navbar.js"></script>
+</body>
+</html>
